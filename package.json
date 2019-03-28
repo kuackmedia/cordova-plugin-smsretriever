@@ -1,15 +1,28 @@
 {
   "name": "cordova-plugin-smsretriever",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Cordova Plugin SMS Retriever API",
   "cordova": {
     "id": "cordova-plugin-smsretriever",
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   },
-  "devDependencies": {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuackmedia/cordova-plugin-smsretriever"
   },
-  "license": "Apache-2.0"
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova-android": ">=6.1.0"
+      },
+      "4.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "6.0.0": {
+        "cordova": ">100"
+      }
+    }
+  }
 }
