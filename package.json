@@ -1,0 +1,15 @@
+{
+  "name": "cordova-plugin-smsretriever",
+  "version": "0.1",
+  "description": "Cordova Plugin SMS Retriever API",
+  "cordova": {
+    "id": "cordova-plugin-smsretriever",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "devDependencies": {
+  },
+  "license": "Apache-2.0"
+}

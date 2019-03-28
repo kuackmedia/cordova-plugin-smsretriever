@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-smsretriever"
+        version="0.1">
+    
+    <name>SMS Retriever</name>
+    <description>Cordova Plugin SMS Retriever API</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,sms,retriever,api</keywords>
+    
+    <js-module src="www/smsretriever.js" name="SMSRetriever">
+        <clobbers target="window.plugins.SMSRetriever" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SMSRetriever">
+                <param name="android-package" value="com.kuack.plugins.sms.SMSRetrieverPlugin" />
+            </feature>
+        </config-file>
+        
+        <source-file src="android/SMSRetrieverPlugin.java" target-dir="src/com/kuack/plugins/sms" />
+        <source-file src="android/SMSBroadcastReceiver.java" target-dir="src/com/kuack/plugins/sms" />
+        
+        <framework src="com.google.android.gms:play-services-auth:+"/>
+        <framework src="com.google.android.gms:play-services-auth-api-phone:+"/>
+    </platform>
+
+</plugin>
